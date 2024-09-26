@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Schedule</h1>
+    <p>Here are the hours we're available:</p>
+    <ul>
+        <li>Monday: 10 AM - 2 PM</li>
+        <li>Tuesday: 10 AM - 2 PM</li>
+        <li>Wednesday: 1 PM - 4 PM</li>
+        <li>Thursday: 10 AM - 2 PM</li>
+        <li>Friday: 10 AM - 1 PM</li>
+    </ul>
+    <p>Last updated: <span id="date"></span></p>
+    <script>
+        document.getElementById('date').innerText = new Date().toLocaleString();
+    </script>
+</body>
+</html>
